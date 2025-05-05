@@ -5,19 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">  </head>
 <body>
-   <section id="container" style="display : flex; height: 100vh">
-    <section id="navigation" style="background-color: magenta; width: 15%">
-        <h1>Connect to windys</h1>
-        <div style="display: flex; flex-direction: column; gap: 8px">
-            <button> User </button> 
-            <button> Hak Akses </button>
-            <button> Logout </button>
+   <section id="container" style="display : flex; height: 100vh; background-color:white; color: #000;">
+    <section id="navigation" style="width: 220px; border-right: 1px solid #000; padding: 20px; display: flex; flex-direction: column; gap: 30px;">
+        <h1 style="font-size: 28px; text-align: center;">Connect to windy</h1>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+            <button class="bi bi-person-fill" style="background: transparent; border: none; padding: 10px; text-align: left; font-size: 16px; cursor: pointer; display: flex; align-items: center; gap: 10px; color: black; border-radius: 8px;"> User </button> 
+            <button class="bi bi-person-fill-gear" style="background: transparent; border: none; padding: 10px; text-align: left; font-size: 16px; cursor: pointer; display: flex; align-items: center; gap: 10px; color: black; border-radius: 8px;"> Hak Akses </button>
+            <button class="bi bi-box-arrow-left" style="background: transparent; border: none; padding: 10px; text-align: left; font-size: 16px; cursor: pointer; display: flex; align-items: center; gap: 10px; color: black; border-radius: 8px;"> Logout </button>
         </div>
     </section>
 
-    <section id="content" style="background-color:blue; width: 85%">
-       <input type="search" placeholder="Cari User">
-  </section> 
+    <section id="content" style="background-color: white; width: 85%; flex: 1; padding: 30px; overflow-y: auto;">
+       <input type="search" placeholder="Cari User" style="width: 100%; padding: 12px; border: 1px solid #000; border-radius: 8px; margin-bottom: 30px; font-size: 16px;">
+       <div class="user-list" style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="user-card" style="border: 1px solid #000; border-radius: 8px; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+            <div class="user-info">
+                <h2 style="font-size: 18px; font-weight: bold; margin-bottom: 1px;">Rahmat Saudi Al Fathir</h2>
+                <p style="font-size: 14px; color: #000; margin-bottom: 8px;">rahmatsaudi@universitasmulia.ac.id</p>
+                <span class="badge" style="background-color: #000; color: white; font-size: 11px; padding: 3px 6px; border-radius: 4x; margin-right: 6px; display: inline-block;">Admin</span>
+                <span class="badge" style="background-color: #000; color: white; font-size: 11px; padding: 3px 6px; border-radius: 4x; margin-right: 6px; display: inline-block;">Employee</span>
+            </div>
+            <span class="status" style="font-weight: bold; font-size: 16px;">Aktif</span>
+        </div>
+
+        <div class="user-card" style="border: 1px solid #000; border-radius: 8px; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+            <div class="user-info">
+                <h2 style="font-size: 18px; font-weight: bold; margin-bottom: 1px;">Lintang</h2>
+                <p style="font-size: 14px; color: #000; margin-bottom: 8px;">lintang@universitasmulia.ac.id</p>
+                <span class="badge" style="background-color: #000; color: white; font-size: 11px; padding: 3px 6px; border-radius: 4px; margin-right: 6px; display: inline-block;">Employee</span>
+            </div>
+            <span class="status" style="font-weight: bold; font-size: 16px;">Aktif</span>
+        </div>
+
+        <div class="user-card" style="border: 1px solid #000; border-radius: 8px; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+            <div class="user-info">
+                <h2 style="font-size: 18px; font-weight: bold; margin-bottom: 1px;">Shafira</h2>
+                <p style="font-size: 14px; color: #000; margin-bottom: 8px;">shafira@universitasmulia.ac.id</p>
+                <span class="badge" style="background-color: #000; color: white; font-size: 11px; padding: 3px 6px; border-radius: 4px; margin-right: 6px; display: inline-block;">Employee</span>
+            </div>
+            <span class="status" style="font-weight: bold; font-size: 16px;">Aktif</span>
+        </div>
+
+        <div class="user-card" style="border: 1px solid #000; border-radius: 8px; padding: 10px; display: flex; justify-content: space-between; align-items: center;">
+            <div class="user-info">
+                <h2 style="font-size: 18px; font-weight: bold; margin-bottom: 1px;">Lebah Ganteng</h2>
+                <p style="font-size: 14px; color: #000; margin-bottom: 8px;">lebahganteng@universitasmulia.ac.id</p>
+                <span class="badge" style="background-color: #000; color: white; font-size: 11px; padding: 3px 6px; border-radius: 4px; margin-right: 6px; display: inline-block;">Employee</span>
+            </div>
+            <span class="status" style="font-weight: bold; font-size: 16px;">Suspended</span>
+        </div>
+       </div>
+    </section> 
+  </section>
+  <button class="fab" style="position: fixed; right: 20px; bottom: 20px; width: 42px; height: 42px; height: 42px; border-radius: 8px; font-size: 26px; background-color: #e0e0e0; border: none; cursor: pointer;">+</button>
 </body>
 </html>
